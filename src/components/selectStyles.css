@@ -1,0 +1,8 @@
+.select {
+    display: block;
+    margin: 10px auto;
+    padding: .9vw;
+    width: 20%;
+    border: 1px solid #90A4AE;
+    height: 30px;
+}

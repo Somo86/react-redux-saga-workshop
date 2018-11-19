@@ -1,0 +1,25 @@
+.color-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.color-box {
+    width: 22%;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+.color-box .detail {
+    padding: 1.5vw;
+}
+
+.color-box .detail:hover {
+    opacity: .7;
+    -webkit-opacity: .7;
+}
+
+.clear {
+    width: 100%;
+    overflow: hidden;
+}
