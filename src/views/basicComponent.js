@@ -1,7 +1,8 @@
 import React from 'react';
 import {default as Utils} from '../utils/functionalUtils';
+import './styles.css';
 
-const colorList = ['red', 'blue', 'green'];
+const colorList = ['#FF3D00', '#00B0FF', '#1DE9B6'];
 
 class BasicStateFullComponent extends React.Component {
     constructor() {
@@ -27,15 +28,19 @@ class BasicStateFullComponent extends React.Component {
             <div>
                 {
                     this.state.colorList.length === 0
-                        ? <div>
+                        ? <div className="content-box">
                             Estamos seleccionando los mejores colores para ti
                           </div>
-                        : <div>
-                            <p>Tienes este color seleccionado: {this.state.color}</p>
-                            { this.state.colorList.map( color => <ColorBox key={`color_${color}`} color={color} changeColor={this.handleChangeColor.bind(this)} />) }
+                        : <div className="content-box">
+                            <h3>Color seleccionado: {this.state.color ? this.state.color : 'ninguno'}</h3>
+                            { this.state.colorList.map( color =>
+                                <ColorBox
+                                    key={`color_${color}`}
+                                    color={color}
+                                    changeColor={this.handleChangeColor.bind(this)}
+                                />) }
                         </div>
                 }
-
             </div>
         );
     }
@@ -45,7 +50,11 @@ class BasicStateFullComponent extends React.Component {
 class ColorBox extends React.Component {
     render() {
         return (
-            <div className="color_card" style={{backgroundColor: this.props.color}} onClick={() => this.props.changeColor(this.props.color)}>
+            <div
+                className="color-card"
+                style={{backgroundColor: this.props.color}}
+                onClick={() => this.props.changeColor(this.props.color)}
+            >
                 {this.props.color}
             </div>
         )

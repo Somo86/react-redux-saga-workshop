@@ -1,0 +1,14 @@
+.content-box {
+    width: 100%;
+    padding: 3vw;
+    text-align: center;
+}
+
+.color-card {
+    width: 15vw;
+    height: 15vw;
+    display: inline-block;
+    margin: 8px;
+    cursor: pointer;
+    color: white;
+}

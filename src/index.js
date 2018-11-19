@@ -1,18 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
+import {applyMiddleware, createStore} from 'redux';
+import createSagaMiddleware from 'redux-saga'
 import { Provider } from "react-redux";
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Routes from './routes';
 import reducers from './redux/mainReducer';
 import initialState from './redux/initialState';
+import mainSaga from './redux/mainSaga';
+
+//saga
+const sagaMiddleware = createSagaMiddleware();
 
 // Redux store
 const store = createStore(
     reducers,
-    initialState
+    initialState,
+    applyMiddleware(sagaMiddleware)
 );
+
+sagaMiddleware.run(mainSaga);
 
 ReactDOM.render(
     <Provider store={store}>
