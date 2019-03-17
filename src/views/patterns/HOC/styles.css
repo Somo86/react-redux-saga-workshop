@@ -1,0 +1,22 @@
+.color-line {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.color-line > div {
+   float: left; 
+}
+
+.color {
+    width: 5%;
+    height: 15px;
+}
+
+.applied {
+    color: green;
+}
+
+.unapplied {
+    color: red;
+}

@@ -1,0 +1,44 @@
+.color-line {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.color-line > div {
+   float: left; 
+}
+
+.color {
+    width: 5%;
+    height: 15px;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+
+.color.large {
+    height: 40px;
+}
+
+.applied {
+    color: green;
+}
+
+.unapplied {
+    color: red;
+}
+
+button {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid gray;
+    color: gray;
+    display: block;
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+
+button:hover {
+    background-color: aqua;
+}
