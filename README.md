@@ -22,6 +22,7 @@ Works on React basics. Practice: Create a visual tag when a color box is selecte
 ```
 localhost:3000/hoc-pattern
 localhost:3000/compund-pattern
+localhost:3000/renderprops-pattern
 ```
 Works on:
 * HOC
