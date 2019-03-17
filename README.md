@@ -1,7 +1,7 @@
 React / Redux / Saga tutorial
 =============================
 
-Small project for learning basics of React-redux-saga. It also include React Patterns
+Small project for learning React-redux-saga basics. It also includes React Patterns
 
 #### install
 
