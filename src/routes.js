@@ -8,6 +8,7 @@ import SagaComponent from './views/sagaComponent';
 import HOCPattern from './views/patterns/HOC';
 import CompoundComponent from './views/patterns/CompundComponents';
 import RenderPropsComponent from './views/patterns/renderProps';
+import {ProviderPattern} from './views/patterns/providerPattern';
 
 export default () => (
     <Router>
@@ -16,6 +17,7 @@ export default () => (
             <Route path="/hoc-pattern" exact component={HOCPattern} />
             <Route path="/compound-pattern" exact component={CompoundComponent} />
             <Route path="/renderprops-pattern" exact component={RenderPropsComponent} />
+            <Route path="/provider-pattern" exact component={ProviderPattern} />
             <Route path="/redux-component" exact component={ReduxComponent} />
             <Route path="/saga-component" exact component={SagaComponent} />
         </Switch>
